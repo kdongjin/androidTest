@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("TAG","mediaPlayer.start()");
                 }else{
                     mediaPlayer.stop();
+                    Log.d("TAG","mediaPlayer.stop()");
                 }
             }
         });
