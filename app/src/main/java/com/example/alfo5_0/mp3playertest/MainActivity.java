@@ -3,6 +3,7 @@ package com.example.alfo5_0.mp3playertest;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Switch;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(switchMusic.isChecked()==true){
                     mediaPlayer.start();
+                    Log.d("TAG","mediaPlayer.start()");
                 }else{
                     mediaPlayer.stop();
                 }
